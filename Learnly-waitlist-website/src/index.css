@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Plus+Jakarta+Sans:wght@200..800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Newsreader", serif;
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+
+  --color-learnly-bg: #fff8f2;
+  --color-learnly-ink: #1e1b16;
+  --color-learnly-primary: #8B5CF6;
+  --color-learnly-secondary: #855300;
+  --color-learnly-surface: #f5ede4;
+}
+
+body {
+  background-color: var(--color-learnly-bg);
+  color: var(--color-learnly-ink);
+  font-family: var(--font-sans);
+  position: relative;
+  overflow-x: hidden;
+  /* Architectural Dot Grid - Sharpened */
+  background-image: 
+    radial-gradient(circle, rgba(30, 27, 22, 0.12) 1.2px, transparent 1.2px);
+  background-size: 32px 32px;
+}
+
+/* Remove the drifting dots as they were too subtle and blurry */
+body::after {
+  display: none;
+}
+
+.paper-texture {
+  position: relative;
+}
+
+.paper-texture::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3Y%3Cfilter id='noiseFilter'%3Y%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  opacity: 0.03;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.journal-shadow {
+  box-shadow: 0 10px 40px -10px rgba(30, 27, 22, 0.08);
+}
+
+.asymmetric-border {
+  border-radius: 2% 98% 3% 97% / 96% 4% 94% 6%;
+}
+
+@layer utilities {
+  .ink-highlighter {
+    position: relative;
+    z-index: 1;
+  }
+  .ink-highlighter::after {
+    content: "";
+    position: absolute;
+    bottom: 4px;
+    left: -4px;
+    right: -4px;
+    height: 12px;
+    background: #fea619;
+    opacity: 0.2;
+    z-index: -1;
+    border-radius: 2px;
+    transform: rotate(-1deg);
+  }
+}
