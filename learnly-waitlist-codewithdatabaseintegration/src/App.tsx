@@ -241,7 +241,7 @@ const LandingPage = ({ onJoin }: { onJoin: (duplicate: boolean) => void }) => {
         
         <p className="text-[11px] font-label text-learnly-ink/40 uppercase tracking-[0.3em] font-bold flex items-center justify-center gap-3">
           <span className="w-8 h-[1px] bg-learnly-ink/10" />
-          Join students building study confidence
+          Join 60+ students building study confidence
           <span className="w-8 h-[1px] bg-learnly-ink/10" />
         </p>
       </section>
@@ -398,7 +398,7 @@ const LandingPage = ({ onJoin }: { onJoin: (duplicate: boolean) => void }) => {
                <div className="flex flex-col gap-1">
                <span className="text-[9px] sm:text-[10px] font-label uppercase tracking-[0.2em] sm:tracking-[0.3em] text-learnly-ink/30 font-black mb-1 sm:mb-2 flex items-center gap-2">
                  <div className="w-1 md:w-1.5 h-1 md:h-1.5 rounded-full bg-red-400" />
-                 LIVE DEVELOPMENT PREVIEW
+                 DEVELOPMENT PREVIEW
                 </span>
                <span className="font-headline text-xl sm:text-3xl font-medium text-learnly-ink flex items-center gap-3 sm:gap-4">
                  <MousePointer2 className="w-5 sm:w-6 h-5 sm:h-6 text-learnly-primary -rotate-12 animate-float" />
@@ -458,7 +458,7 @@ const LandingPage = ({ onJoin }: { onJoin: (duplicate: boolean) => void }) => {
             Ready to <span className="italic text-learnly-primary/80 ink-highlighter">patch the gaps?</span>
           </h2>
           <p className="font-body text-lg md:text-2xl text-learnly-ink/60 mb-10 md:mb-16 max-w-2xl mx-auto md:translate-x-[10px]">
-            Join the students determined to retain what they studied hard for.
+            Join 60+ students determined to retain what they studied hard for.
           </p>
           
           <form onSubmit={handleSubmit} className="flex flex-col items-center w-full max-w-lg mx-auto">
@@ -590,7 +590,7 @@ const SuccessPage = ({ isDuplicate }: { isDuplicate: boolean }) => {
               </div>
             </div>
             <p className="font-body text-sm sm:text-base text-learnly-ink/60 italic leading-relaxed text-center sm:text-left">
-              Join <span className="ink-highlighter font-bold border-b border-learnly-accent/30">50+ students</span> already waiting to patch gaps before exams.
+              Join <span className="ink-highlighter font-bold border-b border-learnly-accent/30">60+ students</span> already waiting to patch gaps before exams.
             </p>
           </div>
         </div>
@@ -602,7 +602,7 @@ const SuccessPage = ({ isDuplicate }: { isDuplicate: boolean }) => {
           transition={{ delay: 0.6 }}
           className="mt-16 text-center italic font-headline text-learnly-ink/70 text-2xl max-w-lg mx-auto"
         >
-          “Learn once. Remember when it counts.”
+          “Let's fix what you missed.”
         </motion.div>
       </div>
     </motion.main>
